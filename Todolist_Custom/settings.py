@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'Todolist_Custom.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST':'localhost',
-        'USER': 'root' ,
-        'PASSWORD':'rahul125',
-        'NAME':'todolist',
+        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': 'rahul125',
+        'NAME': 'todolist',
     }
 }
 

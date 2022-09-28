@@ -12,7 +12,7 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Status</th>
+         
         <th scope="col">Task</th>
         <th scope="col">Task Description</th>
         <th scope="col">Time of Creation</th>
@@ -24,16 +24,16 @@
       {% for task in tasks %}
       <tr>
         <th scope="row">{{ forloop.counter }}</th>
-        {% if task.checked == True %}
+        <!-- {% if task.checked == True %}
         <td><input class="form-check-input" type="checkbox" value="{{ task.checked }}" checked></td>
         {% else %}
         <td><input class="form-check-input" type="checkbox" value="{{ task.checked }}"></td>
-        {% endif %}
+        {% endif %} -->
         <td>{{ task.tasktitle }}</td>
-        <td>{{ task.taskDesc }}</td>
+        <td>{{ task.taskdesc }}</td>
         <td>{{ task.time}}</td>
-        <td><a class="txtcolor btn btn-outline-primary" href="{% url 'update' task.id %}">Edit</a>
-          <a class="txtcolor btn btn-outline-danger" href="{% url 'delete' task.id %}">Delete</a>
+        <td><a class="txtcolor btn btn-outline-primary" href=" ">Edit</a>
+          <a class="txtcolor btn btn-outline-danger" href=" ">Delete</a>
         </td>
       </tr>
       {% endfor %}
